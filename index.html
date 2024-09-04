@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Submission</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Babay ly yayyy!</h1>
+        <p>KoKo would love to have photos of you. Please upload so I can make u best Pofolio:</p>
+  
+        <script type="module">
+        import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+        UC.defineComponents(UC);
+        </script>
+
+        <uc-config
+        ctx-name="my-uploader"
+        source-list="local, url, camera, dropbox"
+        pubkey="afaf72727ebbab6cdd28"
+        ></uc-config>
+
+        <uc-file-uploader-regular
+        ctx-name="my-uploader"
+        class="uc-dark"
+        ></uc-file-uploader-regular>
+    </div>
+</body>
+</html>
